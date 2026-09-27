@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ULTRON // SYSTEM OVERRIDE — GeeksForGeeks Student Chapter, Bennett University</title>
+<meta name="description" content="ULTRON // SYSTEM OVERRIDE — a GeeksForGeeks Student Chapter event at Bennett University.">
+
+<!-- Google Fonts: Orbitron for system/heading text, Space Grotesk for body -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background noise / grid / Ultron layer, purely decorative -->
+<div class="bg-ultron" aria-hidden="true"></div>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<!-- ============================= -->
+<!-- 1. SYSTEM BOOT / INTRO SCREEN -->
+<!-- ============================= -->
+<section id="boot-screen" class="boot-screen" role="dialog" aria-label="System boot sequence">
+  <div class="boot-inner">
+    <div class="boot-lines" id="boot-lines" aria-live="polite"></div>
+    <div class="boot-warning" id="boot-warning" hidden>
+      <span class="boot-warning-title">WARNING</span>
+      <span>SYSTEM OVERRIDE DETECTED</span>
+    </div>
+    <div class="boot-final" id="boot-final" hidden>
+      <span class="boot-final-name">ULTRON</span>
+      <span class="boot-final-status">ONLINE</span>
+    </div>
+  </div>
+  <button class="skip-intro" id="skip-intro" type="button">SKIP INTRO</button>
+</section>
+
+<!-- ============================= -->
+<!-- 2. NAVIGATION                 -->
+<!-- ============================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#hero" class="nav-logo">ULTRON <span class="nav-logo-slash">//</span> GFG</a>
+
+    <nav class="nav-links-desktop" aria-label="Primary">
+      <a href="#event">EVENT</a>
+      <a href="#highlights">MISSIONS</a>
+      <a href="#timeline">TIMELINE</a>
+      <a href="#register">REGISTER</a>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="fullscreen-menu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Full-screen overlay menu -->
+<div class="fullscreen-menu" id="fullscreen-menu" aria-hidden="true">
+  <div class="menu-scanline" aria-hidden="true"></div>
+  <button class="menu-close" id="menu-close" aria-label="Close navigation menu">CLOSE ✕</button>
+  <nav class="menu-links" aria-label="Full screen navigation">
+    <a href="#hero" data-menu-link><span class="menu-index">01</span>HOME</a>
+    <a href="#event" data-menu-link><span class="menu-index">02</span>EVENT</a>
+    <a href="#highlights" data-menu-link><span class="menu-index">03</span>MISSIONS</a>
+    <a href="#timeline" data-menu-link><span class="menu-index">04</span>TIMELINE</a>
+    <a href="#ultron" data-menu-link><span class="menu-index">05</span>CORE</a>
+    <a href="#social" data-menu-link><span class="menu-index">06</span>TRANSMISSIONS</a>
+    <a href="#register" data-menu-link><span class="menu-index">07</span>REGISTER</a>
+  </nav>
+  <div class="menu-footer-text">GEEKSFORGEEKS STUDENT CHAPTER — BENNETT UNIVERSITY</div>
+</div>
+
+<main>
+
+  <!-- ============================= -->
+  <!-- 3. HERO SECTION               -->
+  <!-- ============================= -->
+  <section id="hero" class="hero">
+    <div class="hero-grid-layer" aria-hidden="true"></div>
+    <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text" data-parallax="text">
+        <p class="hero-label">GEEKSFORGEEKS STUDENT CHAPTER <span class="dot">×</span> BENNETT UNIVERSITY</p>
+        <h1 class="hero-title">
+          <span class="line">ULTRON</span>
+          <span class="line hero-title-accent">SYSTEM</span>
+          <span class="line">OVERRIDE</span>
+        </h1>
+        <p class="hero-sub">THE SYSTEM HAS AWAKENED.<br>THE FUTURE IS NO LONGER WAITING.</p>
+        <a href="#event" class="btn btn-primary">ENTER THE SYSTEM</a>
+      </div>
+
+      <div class="hero-visual" data-parallax="visual" aria-hidden="true">
+        <div class="hero-visual-glow"></div>
+        <div class="hero-visual-rings"></div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>SCROLL TO INITIALIZE</span>
+      <span class="scroll-arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 4. EVENT INTRODUCTION         -->
+  <!-- ============================= -->
+  <section id="event" class="event reveal">
+    <div class="section-inner event-grid">
+      <div class="event-copy">
+        <h2 class="section-heading">THE SYSTEM HAS A PURPOSE.</h2>
+        <p class="event-description">
+          Step into a world where technology, creativity and competition collide.
+          ULTRON // SYSTEM OVERRIDE is a futuristic student event designed to challenge minds,
+          bring creators together and turn ideas into action.
+        </p>
+      </div>
+
+      <div class="event-details" id="event-details">
+        <div class="detail-row">
+          <span class="detail-label">EVENT</span>
+          <span class="detail-value" data-field="name">ULTRON // SYSTEM OVERRIDE</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">DATE</span>
+          <span class="detail-value" data-field="date">24 OCTOBER 2026</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">VENUE</span>
+          <span class="detail-value" data-field="venue">BENNETT UNIVERSITY</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">TIME</span>
+          <span class="detail-value" data-field="time">10:00 AM — 5:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 5. EVENT HIGHLIGHTS           -->
+  <!-- ============================= -->
+  <section id="highlights" class="highlights reveal">
+    <div class="section-inner">
+      <h2 class="section-heading center">SYSTEM CAPABILITIES</h2>
+
+      <div class="cards-grid">
+        <article class="capability-card">
+          <span class="card-index">01</span>
+          <h3>TECH CHALLENGES</h3>
+          <p>Test your problem-solving skills.</p>
+        </article>
+        <article class="capability-card">
+          <span class="card-index">02</span>
+          <h3>LIVE MISSIONS</h3>
+          <p>Take on challenges designed to push your limits.</p>
+        </article>
+        <article class="capability-card">
+          <span class="card-index">03</span>
+          <h3>COMPETE &amp; WIN</h3>
+          <p>Compete with fellow students and earn recognition.</p>
+        </article>
+        <article class="capability-card">
+          <span class="card-index">04</span>
+          <h3>ASSEMBLE</h3>
+          <p>Connect, collaborate and build with other students.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 6. EVENT TIMELINE              -->
+  <!-- ============================= -->
+  <section id="timeline" class="timeline reveal">
+    <div class="section-inner">
+      <h2 class="section-heading center">MISSION PROTOCOL</h2>
+
+      <div class="timeline-track" id="timeline-track">
+        <div class="timeline-progress" id="timeline-progress" aria-hidden="true"></div>
+
+        <div class="timeline-item">
+          <span class="timeline-time">10:00</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+          <span class="timeline-label">SYSTEM CHECK-IN</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-time">11:00</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+          <span class="timeline-label">MISSION INITIALIZED</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-time">13:00</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+          <span class="timeline-label">CORE CHALLENGE</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-time">15:00</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+          <span class="timeline-label">FINAL PROTOCOL</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-time">16:30</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+          <span class="timeline-label">SYSTEM SHUTDOWN</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-time">17:00</span>
+          <span class="timeline-node" aria-hidden="true"></span>
+          <span class="timeline-label">RESULTS &amp; RECOGNITION</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 7. ULTRON INTERACTIVE SECTION -->
+  <!-- ============================= -->
+  <section id="ultron" class="ultron-section reveal">
+    <div class="ultron-visual" data-parallax="visual">
+      <div class="hud" aria-hidden="true">
+        <div class="hud-item hud-item-1"><span class="hud-label">NEURAL NETWORK</span><span class="hud-value">ONLINE</span></div>
+        <div class="hud-item hud-item-2"><span class="hud-label">THREAT LEVEL</span><span class="hud-value hud-danger">MAXIMUM</span></div>
+        <div class="hud-item hud-item-3"><span class="hud-label">CORE STATUS</span><span class="hud-value">ACTIVE</span></div>
+        <div class="hud-item hud-item-4"><span class="hud-label">HUMAN OVERRIDE</span><span class="hud-value hud-danger">DENIED</span></div>
+      </div>
+    </div>
+
+    <div class="ultron-text">
+      <h2 class="ultron-heading">I AM NOT THE FUTURE.</h2>
+      <p class="ultron-subheading">I AM WHAT COMES NEXT.</p>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 7B. SOCIAL / TRANSMISSIONS    -->
+  <!-- ============================= -->
+  <section id="social" class="social reveal">
+    <div class="section-inner">
+      <h2 class="section-heading center">TRANSMISSIONS</h2>
+      <p class="social-sub">SIGNALS FROM THE OUTSIDE NETWORK.</p>
+
+      <div class="social-columns">
+        <!-- LINKEDIN COLUMN -->
+        <div class="social-column">
+          <h3 class="social-group-title">LINKEDIN</h3>
+          <div class="social-image-grid">
+            <a class="social-photo" href="https://www.linkedin.com/company/gfg-bu/" target="_blank" rel="noopener noreferrer" aria-label="Visit GeeksforGeeks LinkedIn">
+              <span class="social-badge" aria-hidden="true">IN</span>
+              <img src="assets/photo1.png" alt="GeeksforGeeks Student Chapter members at an exhibit booth" loading="lazy">
+            </a>
+            <a class="social-photo" href="https://www.linkedin.com/company/gfg-bu/" target="_blank" rel="noopener noreferrer" aria-label="Visit GeeksforGeeks LinkedIn">
+              <span class="social-badge" aria-hidden="true">IN</span>
+              <img src="assets/photo2.png" alt="GeeksforGeeks Student Chapter group photo at an event" loading="lazy">
+            </a>
+            <a class="social-photo" href="https://www.linkedin.com/company/gfg-bu/" target="_blank" rel="noopener noreferrer" aria-label="Visit GeeksforGeeks LinkedIn">
+              <span class="social-badge" aria-hidden="true">IN</span>
+              <img src="assets/photo3.png" alt="Audience seated at a GeeksforGeeks Student Chapter session" loading="lazy">
+            </a>
+            <a class="social-photo" href="https://www.linkedin.com/company/gfg-bu/" target="_blank" rel="noopener noreferrer" aria-label="Visit GeeksforGeeks LinkedIn">
+              <span class="social-badge" aria-hidden="true">IN</span>
+              <img src="assets/photo4.png" alt="GeeksforGeeks Student Chapter team photo with a guest" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <!-- INSTAGRAM COLUMN -->
+        <div class="social-column">
+          <h3 class="social-group-title">INSTAGRAM</h3>
+          <div class="social-image-grid">
+            <a class="social-photo" href="https://www.instagram.com/geeksforgeeks_bu/" target="_blank" rel="noopener noreferrer" aria-label="Visit GeeksforGeeks Instagram">
+              <span class="social-badge" aria-hidden="true">IG</span>
+              <img src="assets/photo5.png" alt="Large group photo at a GeeksforGeeks Student Chapter event" loading="lazy">
+            </a>
+            <a class="social-photo" href="https://www.instagram.com/geeksforgeeks_bu/" target="_blank" rel="noopener noreferrer" aria-label="Visit GeeksforGeeks Instagram">
+              <span class="social-badge" aria-hidden="true">IG</span>
+              <img src="assets/photo6.png" alt="Lamp-lighting inauguration ceremony" loading="lazy">
+            </a>
+            <a class="social-photo" href="https://www.instagram.com/geeksforgeeks_bu/" target="_blank" rel="noopener noreferrer" aria-label="Visit GeeksforGeeks Instagram">
+              <span class="social-badge" aria-hidden="true">IG</span>
+              <img src="assets/photo7.png" alt="Two students holding a contest prize" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- 8. REGISTRATION               -->
+  <!-- ============================= -->
+  <section id="register" class="register reveal">
+    <div class="section-inner register-inner">
+      <h2 class="section-heading center">WILL YOU ENTER THE SYSTEM?</h2>
+      <p class="register-sub">THE FUTURE IS WAITING.</p>
+      <button class="btn btn-primary btn-large" id="open-register" type="button">REGISTER NOW</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================= -->
+<!-- REGISTRATION MODAL            -->
+<!-- ============================= -->
+<div class="modal-overlay" id="modal-overlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal-close" id="modal-close" aria-label="Close registration form">✕</button>
+
+    <div id="modal-form-view">
+      <h3 id="modal-title" class="modal-title">REGISTRATION</h3>
+      <p class="modal-subtitle">Fill in your details to join the mission.</p>
+
+      <form id="registration-form" novalidate>
+        <div class="form-field">
+          <label for="field-name">Full Name</label>
+          <input type="text" id="field-name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="field-email">Email</label>
+          <input type="email" id="field-email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="field-college">College / University</label>
+          <input type="text" id="field-college" name="college" required autocomplete="organization">
+        </div>
+        <div class="form-field">
+          <label for="field-phone">Phone Number</label>
+          <input type="tel" id="field-phone" name="phone" required autocomplete="tel">
+        </div>
+        <div class="form-field">
+          <label for="field-team">Team Name <span class="optional">(optional)</span></label>
+          <input type="text" id="field-team" name="team" autocomplete="off">
+        </div>
+
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+
+        <button type="submit" class="btn btn-primary btn-full">SUBMIT REGISTRATION</button>
+      </form>
+    </div>
+
+    <div id="modal-success-view" class="modal-success" hidden>
+      <p class="success-tag">ACCESS GRANTED</p>
+      <h3 class="success-title">REGISTRATION INITIALIZED.</h3>
+      <p class="success-body">Your entry has been logged into the system. Watch your email for further transmissions.</p>
+      <button class="btn btn-outline" id="modal-done" type="button">CLOSE</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= -->
+<!-- 9. FOOTER                     -->
+<!-- ============================= -->
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <div class="footer-brand">
+      <p class="footer-org">GEEKSFORGEEKS STUDENT CHAPTER</p>
+      <p class="footer-uni">BENNETT UNIVERSITY</p>
+    </div>
+    <div class="footer-event">ULTRON // SYSTEM OVERRIDE</div>
+    <div class="footer-social" aria-label="Social links (placeholder)">
+      <a href="#" aria-label="Instagram (placeholder link)">IG</a>
+      <a href="#" aria-label="LinkedIn (placeholder link)">IN</a>
+      <a href="#" aria-label="Email (placeholder link)">@</a>
+    </div>
+    <div class="footer-copy">© 2026</div>
+  </div>
+</footer>
+
+<div class="custom-cursor" id="custom-cursor" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
